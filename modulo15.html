@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link  href="./bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style/custom.css">      
+    <title>Modulo15-Bootstrap</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                <H1><span>Roupas RM</span></H1>
+                </div>
+                <div class="col">                    
+                    <ul class="nav justify-content-end"><!--trocar menu para sm-->
+                        <li class="nav-item"><a class="nav-link active" href="">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#produtos">Produtos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+        <section id="produtos">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h2>Produtos</h2>
+                    <div class="card">
+                        <img src="./image/Produtos.jpg" alt="imagem exemplo" class="img-fluid">
+                        <div class="card-body">
+                            <h5 class="card-title">Camisa Preta</h5>
+                            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                            <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-1">Ver Produto</a>
+                        </div>
+                    </div>
+                        <div class="card">
+                            <img src="./image/produto2.jpg" alt="imagem exemplo" class="img-fluid">
+                            <div class="card-body">
+                                <h5 class="card-title">Camisa cinza</h5>
+                                <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                <a class="btn btn-primary"data-bs-toggle="modal" data-bs-target="#modal-2">Ver Produto</a>
+                            </div>
+                    </div>        
+                            <div class="card">
+                                <img src="./image/produto3.jpg" alt="imagem exemplo" class="img-fluid">
+                                <div class="card-body">
+                                    <h5 class="card-title">Camisa branca</h5>
+                                    <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                    <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-3" >Ver Produto</a>
+                                </div>
+                    </div>
+    </section>
+    <section id="sobre">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7 col-sm-12">
+                    <h2>Sobre nos</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, praesentium ipsum? Similique deserunt harum ab officia explicabo aspernatur quis unde? Delectus ea qui iure quidem vel, repellendus obcaecati rem cumque.</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum eius laboriosam consectetur eum iusto sapiente cupiditate officia, dolor maiores eligendi, mollitia illo quibusdam aperiam itaque ratione fugiat, repellendus libero numquam.</p>                
+                </div>
+                <div class="col-md-5 col-sm-12">
+                    <img src="./image/SobreNos.jpg" alt="imagem exemplo" class="img-fluid">
+                </div>
+            </div>
+        </div>
+        </section>
+        <section id="contato">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-12">
+                        <h2>Contato</h2>
+                        <p>Ficou interessado? contate-nos atraves do formulario ao lado!</p>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <form class="form">
+                            <div class="input-group">
+                                <input class="form-control" type="text" name="Nome" placeholder="Digite seu nome">
+                            </div>
+                            <div class="input-group">
+                                <input class="form-control" type="text" name="Email" placeholder="Digite seu email">
+                            </div>
+                            <div class="input-group">
+                                <textarea class="form-control" name="" rows="5"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-lg btn-success">Solicitar contato</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="modal fade" id="modal-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Camisa Preta</h5>
+                        <button class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <h6>Confira disponibilidade</h6>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Tamanho</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>P</td>
+                                    
+                                </tr>
+                                
+                                <tr>
+                                    <td>G</td>
+                                    
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+                       <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">fechar</button> 
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="modal fade" id="modal-2">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Camisa Cinza</h5>
+                        <button class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <h6>Confira disponibilidade</h6>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Tamanho</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>P</td>
+                                    
+                                </tr>
+                                
+                                <tr>
+                                    <td>M</td>
+                                    
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+                       <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">fechar</button> 
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="modal fade" id="modal-3">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Camisa Branca</h5>
+                        <button class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <h6>Confira disponibilidade</h6>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Tamanho</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>P</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td>M</td>
+                                    
+                                </tr>
+                                
+                                <tr>
+                                    <td>G</td>
+                                    
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+                       <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">fechar</button> 
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
