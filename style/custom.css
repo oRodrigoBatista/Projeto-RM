@@ -19,7 +19,7 @@ input,textarea{
     font-size: 2rem;
    
 }
-img{
+.img-fluid{
     border-radius: 10%;
 }
 span{
@@ -37,10 +37,10 @@ span:hover {
     text-shadow: #fcfcfc79 -4px 0,#00ffff 4px 0;
 }
 header{
-    background-color: rgba(121, 191, 238, 0.288);
+    background-color: rgba(0, 0, 0, 0.288);
 }  
 body {
-    background-color: rgba(121, 191, 238, 0.493);
+    background-color: rgba(0, 0, 0, 0.849);
 }
 ul{
     
@@ -52,17 +52,19 @@ ul{
 }
 li{
     padding-top: 1rem;
-    font-size: 1.5rem;
+    font-size: 0.8rem;
 }
 li:hover{
     text-shadow: #ffffff80 -2px 0,#000000ad 2px 0;
 }
 h2{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: aliceblue;
 }
 p{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-style: oblique;
+    color: aliceblue;
 
 }
 .modal-content{
